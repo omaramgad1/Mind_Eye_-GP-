@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Home.VisuallyImpaired">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/edit_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:id="@+id/admin_page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:text="Visually Impaired"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/bluetooth_connection_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:contentDescription="Edit Profile"
+                android:src="@drawable/ic_baseline_bluetooth_24" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/image_captioning_btn"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/image_captioning"
+                android:contentDescription="This" />
+
+            <ImageView
+                android:id="@+id/enable_glasses_btn"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="Enable Glasses"
+                android:src="@drawable/icon_small_gray" />
+
+
+            <ImageView
+                android:id="@+id/labels_detection_btn"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_captioning_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-35dp"
+                android:background="@drawable/labels_detection"
+                android:contentDescription="This" />
+
+            <ImageView
+                android:id="@+id/face_detection_btn"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labels_detection_btn"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/face_detection"
+                android:contentDescription="This" />
+
+
+            <ImageView
+                android:id="@+id/object_detection_btn"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/face_detection_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-35dp"
+                android:background="@drawable/object_detection"
+                android:contentDescription="This" />
+
+            <ImageView
+                android:id="@+id/text_reader_btn"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/object_detection_btn"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text_reader"
+                android:contentDescription="This Text Reader" />
+
+
+            <ImageView
+                android:id="@+id/currency_detection_btn"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_reader_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-35dp"
+                android:background="@drawable/currency_detection"
+                android:contentDescription="This Currency Detection" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
